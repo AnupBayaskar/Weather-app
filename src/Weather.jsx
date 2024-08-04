@@ -6,7 +6,7 @@ const Weather = () => {
   const [city, setCity] = useState('New York'); 
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+  useEffect(() => { 
     const fetchWeather = async () => {
       try {
         const response = await axios.get("https://freetestapi.com/api/v1/weathers");
